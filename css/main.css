@@ -1,0 +1,104 @@
+:root {
+  --icon: 70px;
+}
+
+body,
+body * {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+aside {
+  position: absolute;
+  height: 100vh;
+  background-color: rgb(7, 151, 243);
+  overflow: hidden;
+  flex-direction: column;
+}
+
+.container {
+  margin: 0;
+  margin-top: 10px;
+  width: calc(var(--icon) + 20px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+}
+
+.container p {
+  text-align: center;
+  font-size: 14px;
+  color: white;
+}
+.container:hover p {
+  color: darkslategray;
+}
+
+.container img {
+  margin-top: 10px;
+  width: 80%;
+}
+
+.userArea a {
+  position: absolute;
+  right: 10px;
+  top: 15px;
+}
+
+.main {
+  position: relative;
+  left: calc(var(--icon) + 20px);
+  width: calc(100vw - 20px - var(--icon));
+  height: 100vh;
+  background-color: rgb(157, 199, 216);
+}
+
+.userArea {
+  width: 100%;
+  height: 60px;
+  background-color: white;
+  position: relative;
+  box-shadow: 5px 0 50px grey;
+}
+
+.userArea p {
+  color: rgb(7, 151, 243);
+  font-size: 32px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+
+.workArea {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 60px);
+}
+
+@media (max-width: 1200px) {
+  :root {
+    --icon: 60px;
+  }
+}
+
+@media (max-width: 1000px) {
+  :root {
+    --icon: 50px;
+  }
+}
+@media (max-width: 800px) {
+  :root {
+    --icon: 40px;
+  }
+}
+
+.bckgr_image {
+  width: calc(100vw - var(--icon) - 20px);
+  height: calc(100vh - 60px);
+  background-size: cover;
+}

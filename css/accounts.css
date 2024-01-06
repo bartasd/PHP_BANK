@@ -1,0 +1,48 @@
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 70%;
+  margin-left: 15%;
+  margin-top: 100px;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  color: darkslategray;
+  text-align: center;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.control {
+  width: 20px;
+  padding: 15px;
+  text-align: center;
+  transition-property: background-color, border-radius;
+  transition-duration: 1.5s;
+  cursor: pointer;
+}
+
+.control:hover {
+  border-radius: 16px;
+}
+
+.add:hover {
+  background-color: rgba(0, 128, 0, 0.8);
+}
+
+.take:hover {
+  background-color: rgba(255, 0, 0, 0.8);
+}
+
+.close:hover {
+  background-color: rgba(0, 0, 255, 0.8);
+}
+
+.sort {
+  cursor: pointer;
+}

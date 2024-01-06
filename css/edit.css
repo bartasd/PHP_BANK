@@ -1,0 +1,39 @@
+.edit_container {
+  width: 400px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: calc(50% - 200px);
+  margin-top: calc(10% - 50px);
+}
+
+.edit_form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.edit_title {
+  color: darkslategray;
+  font-size: 24px;
+}
+
+.edit_label {
+  color: darkslategray;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+.edit_input {
+  color: darkslategray;
+}
+
+.edit_amount {
+  margin-left: 20px;
+  margin-top: 10px;
+  width: 100px;
+  align-self: center;
+  justify-content: center;
+}

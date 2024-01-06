@@ -1,0 +1,46 @@
+<?php
+$accounts = [];
+
+$accounts[] = [
+    'id' => 1,
+    'name' => "Homer",
+    'surname' => "Simpson",
+    'id_code' => "37002020250",
+    'iban' => "LT0487463184268",
+    'balance' => 900
+];
+$accounts[] = [
+    'id' => 2,
+    'name' => "Marge",
+    'surname' => "Simpson",
+    'id_code' => "37002020250",
+    'iban' => "LT04874631874268",
+    'balance' => 900
+];
+$accounts[] = [
+    'id' => 3,
+    'name' => "Bart",
+    'surname' => "Simpson",
+    'id_code' => "37002020250",
+    'iban' => "LT04874631874268",
+    'balance' => 900
+];
+$accounts[] = [
+    'id' => 4,
+    'name' => "Lisa",
+    'surname' => "Simpson",
+    'id_code' => "37002020250",
+    'iban' => "LT04874631874268",
+    'balance' => 900
+];
+$accounts[] = [
+    'id' => 5,
+    'name' => "Maggie",
+    'surname' => "Simpson",
+    'id_code' => "37002020250",
+    'iban' => "LT04874631874268",
+    'balance' => 900
+];
+
+file_put_contents(__DIR__ . '/../data/accounts.json', json_encode($accounts, JSON_PRETTY_PRINT));
+?>

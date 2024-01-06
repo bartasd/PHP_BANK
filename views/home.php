@@ -1,0 +1,1 @@
+<div class="bckgr_image" id="bckgr_image"></div>

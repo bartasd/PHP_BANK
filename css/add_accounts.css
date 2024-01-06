@@ -1,0 +1,24 @@
+.add_form {
+  margin-left: calc(50% - 150px);
+  margin-top: calc(10% - 50px);
+  width: 300px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+}
+.add_input {
+  color: darkslategray;
+}
+.add_label {
+  color: darkslategray;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.add_button {
+  margin-left: 20px;
+  margin-top: 10px;
+  width: 100px;
+  align-self: center;
+  justify-content: center;
+}
