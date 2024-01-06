@@ -1,5 +1,16 @@
 <?php
 session_start();
+// RESTRICT ACCESS FROM IF NOT LOGINED.
+if(!isset($_SESSION['LOGGINED'])){
+    $_SESSION['error'] = "You're not loggined! Please, login first.";
+    header('Location: http://localhost:8080/u2');
+    die;
+}
+// RESTRICT DIRECT ACCESS IF LOGINNED.
+if(!isset($_GET['id'])){
+    header('Location: http://localhost:8080/u2/views/main.php');
+    die;
+}
 $filePath = dirname(__DIR__, 1) . '/data/accounts.json';
 $accounts = json_decode(file_get_contents($filePath), true);
 $id = $_GET['id'];

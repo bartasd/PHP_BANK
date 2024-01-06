@@ -1,5 +1,10 @@
 <?php
     session_start();
+    if(!isset($_SESSION['LOGGINED'])){
+        $_SESSION['error'] = "You're not loggined! Please, login first.";
+        header('Location: http://localhost:8080/u2');
+        die;
+    }
     $filePath = dirname(__DIR__, 1) . '/data/accounts.json';
     $accounts = json_decode(file_get_contents($filePath), true);
     function cmp($a, $b)

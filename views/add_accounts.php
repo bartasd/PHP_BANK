@@ -1,5 +1,10 @@
 <?php
   session_start();
+  if(!isset($_SESSION['LOGGINED'])){
+      $_SESSION['error'] = "You're not loggined! Please, login first.";
+      header('Location: http://localhost:8080/u2');
+      die;
+  }
   require dirname(__DIR__, 1).'/logic/generateIban.php';
   $filePath = dirname(__DIR__, 1) . '/data/accounts.json';
   $accounts = json_decode(file_get_contents($filePath), true);
