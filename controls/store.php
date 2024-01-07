@@ -27,12 +27,12 @@
 
     if(strlen($name) < 4 ){
         $_SESSION['error'] = "Cannot create an account for $name because name is too short.";
-        header('Location: http://localhost:8080/u2/pages/main.php?i=add_accounts');
+        header('Location: http://localhost:8080/u2/views/main.php?i=add_accounts');
         die;
     }
     else if(strlen($lname) < 4){
         $_SESSION['error'] = "Cannot create an account for $lname because last name is too short.";
-        header('Location: http://localhost:8080/u2/pages/main.php?i=add_accounts');
+        header('Location: http://localhost:8080/u2/views/main.php?i=add_accounts');
         die;
     }
     else if(in_array($id_code, $allIds)){
