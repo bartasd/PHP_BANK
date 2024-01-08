@@ -19,6 +19,12 @@ $id = $_GET['id'];
 $action = $_GET['action'];
 $ammount = $_POST['ammount'];
 
+if($ammount < 0){
+    header('Location: http://localhost:8080/u2/views/main.php?i=accounts');
+    $_SESSION['error'] = "You cannot enter negative ammount.";
+    die;
+}
+
 foreach ($accounts as &$account) {
     if ($account['id'] == $id) {
         $name = $account['name'];
